@@ -1,10 +1,13 @@
-import "./App.css";
 import React from "react";
+import Home from "./pages/Home/Home";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <div className="text-2xl font-bold">Hello world</div>
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>
     </>
   );
 }
